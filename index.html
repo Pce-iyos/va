@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media and Mental Health</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Social Media and Mental Health </h1>
+    <div id="controls">
+        <label for="filter-gender">Gender:</label>
+        <select id="filter-gender">
+            <option value="All">All</option>
+        </select>
+
+        <label for="filter-platform">Platform:</label>
+        <select id="filter-platform">
+            <option value="All">All</option>
+        </select>
+
+        <label for="age-slider">Age:</label>
+        <input type="range" id="age-slider" min="15" max="60" step="1" value="60">
+        <span id="age-value">60</span>
+    </div>
+
+    <div class="chart-container">
+        <div id="heatmap">
+            <div class="title">Heatmap of Metrics vs Time Spent</div>
+        </div>
+        <div id="legend" style="margin-left: 20px;"></div>
+    </div>
+
+    <div id="insight-box">
+        <p id="insight-text"></p>
+        <center><button id="download-insight" class="download-btn">
+            Download Visualization & Insights
+        </button></center>
+    </div>
+  
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

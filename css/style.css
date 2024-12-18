@@ -1,0 +1,148 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e3f2fd, #f8f9fa); /* Subtle gradient */
+    color: #333;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #007bff; /* Primary color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Controls Section */
+#controls {
+    text-align: center;
+    margin: 20px 0;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#controls label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+}
+
+#controls select,
+#controls input {
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+}
+
+#controls span {
+    font-weight: bold;
+    color: #28a745; /* Accent color */
+}
+
+/* Chart Container Styling */
+.chart-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heatmap Title Styling */
+#heatmap .title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Legend Styling */
+#legend {
+    margin-top: 10px;
+    color: #6c757d; /* Secondary color */
+}
+
+/* Tooltip Styling */
+.tooltip {
+    position: absolute;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    font-size: 12px;
+}
+
+/* Insight Box Styling */
+#insight-box {
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 70%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#insight-text {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* SVG Styling */
+svg {
+    border: 2px solid #007bff; /* Primary color */
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+
+/* Beautiful Download Button */
+.download-btn {
+    background: linear-gradient(to right, #007bff, #0056b3); /* Gradient background */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.download-btn:hover {
+    background: linear-gradient(to right, #0056b3, #003b75); /* Darker gradient on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.download-btn:active {
+    background: linear-gradient(to right, #003b75, #001f40);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(1px);
+}
